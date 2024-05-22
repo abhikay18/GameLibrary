@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Graphics">
+
+    <EditText
+        android:id="@+id/gameNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Game Name"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/gamePriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/gameNameEditText"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/gameQuantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:layout_below="@id/gamePriceEditText"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/taxRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tax Rate (%)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/gameQuantityEditText"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/discountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Discount (%)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/taxRateEditText"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Game"
+        android:fontFamily="@font/bungee"
+        android:background="#2C5CD6"
+        android:layout_below="@id/discountEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:fontFamily="@font/bungee"
+        android:layout_below="@id/addButton"
+        android:background="#0F6CF6"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:fontFamily="@font/bungee"
+        android:background="#1A6EEA"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: ₹0.00"
+        android:textSize="18sp"
+        android:layout_below="@id/resetButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/gameListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:background="#235DF1"
+        android:orientation="vertical"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

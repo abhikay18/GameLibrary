@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GameApp</string>
+
+    <string name="heading_one">Welcome \nTo Game Library</string>
+    <string name="heading_two">Stay Ahead \nof the Curve</string>
+    <string name="heading_three">Explore \nDiverse Genres</string>
+    <string name="heading_fourth">Ready \nto Play?</string>
+
+    //Description
+    <string name="desc_one">Where Gaming Never Ends!</string>
+    <string name="desc_two">Discover Trending Games Here!</string>
+    <string name="desc_three"> Your One-Stop Shop for Every Gaming Mood!</string>
+    <string name="desc_fourth">Enter a Universe of Limitless Gaming Thrills!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- Disabled state -->
+<item android:state_enabled="false">
+    <shape android:shape="rectangle">
+        <!-- Set your desired background color for disabled state -->
+        <solid android:color="#7F7F7F"/> <!-- You can adjust the opacity -->
+        <!-- You can also add other attributes like corner radius, stroke, etc. -->
+    </shape>
+</item>
+<!-- Default state -->
+<item>
+    <shape android:shape="rectangle">
+        <!-- Set your default background color for the button -->
+        <solid android:color="#237CDC"/> <!-- Example color, replace it with yours -->
+        <!-- You can also add other attributes like corner radius, stroke, etc. -->
+    </shape>
+</item>
+</selector>
